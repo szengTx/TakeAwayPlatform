@@ -475,7 +475,7 @@ namespace TakeAwayPlatform
         {
             threadPool.enqueue([this, &res] {
                 auto db_handler = acquire_db_handler();
-                Json::Value menu = db_handler->query("SELECT * FROM menu_items");
+                Json::Value menu = db_handler->query("SELECT * FROM dishes");
                 release_db_handler(std::move(db_handler));
                 
                 res.set_content(menu.toStyledString(), "application/json");
