@@ -1,0 +1,18 @@
+{
+    "database": 
+    {
+        "host": "127.0.0.1",
+        "port": 33060,
+        "user": "root",
+        "password": "1234",
+        "name": "TakeAwayDatabase",
+        "pool_size": 10
+    },
+
+    "server": 
+    {
+        "port": 9090,
+        "timeout": 10,
+        "thread_pool_size": 8
+    }
+}
